@@ -100,3 +100,12 @@ setInterval(() => {
     cards[current].classList.add("flipped");
     current = (current + 1) % cards.length;
 }, 6000);
+
+// current year
+function currentYear() {
+    const yearSpan = document.getElementById("year");
+    const year = new Date().getFullYear();
+    yearSpan.textContent = year;
+}
+
+currentYear();
